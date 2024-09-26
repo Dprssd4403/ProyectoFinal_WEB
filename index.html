@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Antojito - Inicio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" style="background-color:transparent; width: 95%;">
+            <div class="container-fluid">
+                <img src="Imagenes/logo.avif" alt="Logo" width="100px" height="auto"
+                    class="d-inline-block align-text-top p-2">
+                <a class="navbar-brand px-3" href="index.html"
+                    style="font-size: 35px;color: rgb(255, 255, 255);">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu.html" style="color: rgb(0, 0, 0);">MENÚ
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html" style="color: rgb(0, 0, 0);">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-icon" style="margin: auto;">
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon-cart">
+                        <path
+                            d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Pizza</p>
+                                <span class="precio-producto-carrito">$14</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="icon-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+                </div>
+            </div>
+    </header>
+    <!-- Carrusel Automático -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/chef-3975835_1280.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/table-791167_1280.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Disfruta de nuestras delicias</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/meseroComida.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Servicio excepcional para todos nuestros clientes</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/salmon-518032_1280.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ingredientes frescos y de la mejor calidad</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2>Bienvenidos a Antojito</h2>
+                    <p class="lead">
+                        En Antojito, creemos que la comida es más que solo alimento; es una experiencia que une a las
+                        personas, crea recuerdos y deleita los sentidos. Desde nuestros inicios, nos hemos dedicado a
+                        ofrecer platos deliciosos, frescos y auténticos que capturan el sabor y la esencia de la cocina
+                        tradicional.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-card">
+                    <div class="card">
+                        <figure>
+                            <img src="Imagenes/medium-shot-professional-chefs-working-together.jpg" class="card-img-top"
+                                alt="...">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;">Quiénes Somos</h3>
+                            <p class="card-text">
+                                Bienvenidos a Antojito de Empresa, donde la pasión por la buena comida y el servicio
+                                excepcional se unen para ofrecerte una experiencia culinaria única. Nuestra misión es
+                                brindarte los sabores más auténticos y deliciosos, preparados con ingredientes frescos y
+                                de alta calidad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="Imagenes/service-1303313_1280.jpg" class="card-img-top" alt="...">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;">Nuestra Historia</h3>
+                            <p class="card-text">
+                                Antojito nació de la pasión por la buena comida y el deseo de compartir esa pasión con
+                                nuestra comunidad. Fundada en 1980, nuestra empresa ha crecido desde un pequeño local
+                                familiar hasta convertirse en un punto de referencia para los amantes de la buena
+                                comida.
+                                Cada día, nos esforzamos por mantener los valores y la calidad que nos han distinguido
+                                desde el primer día.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="Imagenes/aaaa.webp" class="card-img-top" alt="...">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;"> Qué Ofrecemos</h3>
+                            <p class="card-text">
+                                En Antojito de Empresa, encontrarás una amplia variedad de platillos que van desde los
+                                clásicos favoritos hasta creaciones innovadoras. Ya sea que estés buscando un desayuno
+                                reconfortante, un almuerzo rápido o una cena memorable. Además, contamos con opciones
+                                vegetarianas, veganas y sin
+                                gluten para adaptarnos a tus necesidades dietéticas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="Imagenes/medium-shot-professional-chef-posing.jpg" class="card-img-top" alt="...">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;">Nuestro Compromiso</h3>
+                            <p class="card-text">
+                                Nos enorgullece ofrecer no solo comida deliciosa, sino también un servicio de primera.
+                                Creemos que cada comida debe ser una celebración, y trabajamos arduamente para
+                                asegurarnos de que cada visita a Antojito de Empresa sea especial.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Antojito. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="taller.js"></script>
+</body>
+
+</html>
